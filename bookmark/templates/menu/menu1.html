@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>제목</title>
+</head>
+<body>
+bookmark/menu/ insert 페이지임
+    <form action="/bookmark/menu/insert" method="POST">{% csrf_token %}
+        <input name="bnid" type="text" value="12341234">
+        <input name="bsid" type="text" value="lejasek">
+        <input type="submit" value="확인"/>
+    </form>
+</body>
+</html>
