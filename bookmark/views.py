@@ -19,13 +19,13 @@ def menu1(request):
     return render(request, 'menu/menu1.html')
 
 def insert(request):
-    print("ggg")
     ss = request.POST['bnid']
     bb = request.POST['bsid']
 
+    #mid = Article.objects.filter(id=ss,pw=bb)
+
     query = "insert into temp(id, name)  values(\"%s\", \"%s\")" % (ss, bb)
     cursor = connection.cursor()
-    print(query)
     cursor.execute(query)
 
     return render(request, 'index.html')
